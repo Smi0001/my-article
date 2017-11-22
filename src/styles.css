@@ -1,0 +1,64 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.modal {
+  display: none;
+  opacity: 1;
+  top: 10%;
+  transform: scaleX(1);
+  z-index: 1003;
+  background-color: #8B4444;
+  border-radius: 2px;
+  left: 0;
+  margin: auto;
+  max-height: 70%;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  width: 55%;
+  will-change: top, opacity;
+}
+.modal-content {
+  padding: 10px;
+  height: 100%;
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 0 transparent;
+}
+.modal .modal-footer {
+  background-color: #fafafa;
+  border-radius: 0 0 2px 2px;
+  height: 56px;
+  padding: 4px 20px;
+  text-align: right;
+  width: 100%;
+}
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  will-change: opacity;
+  z-index: 999;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cur-p {
+  cursor: pointer;
+}
+.cur-d {
+  cursor: default;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}

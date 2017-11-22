@@ -1,0 +1,39 @@
+<div class="dash-header"></div>
+<h1 class="center welcome-msg">Welcome to Dashboard</h1>
+<button type="button" class="cur-p btn btn-link fr" (click)="logOut()">Logout</button>
+
+<div *ngIf="userInfo" class="dash-div">
+    <div class="row">
+        <div class="col col-lg-3">
+            <div class="avatar">
+                <img [src]="userInfo.avatar" alt="User Image" class="user-img">
+            </div>
+        </div>
+        <div class="name-div col-lg-9 row">
+            <div class="col-lg-6 name">First Name</div>
+            <div class="col-lg-6 name">Last Name</div>
+            <div class="topic col-lg-6 trim" contenteditable="true" title="{{userInfo.fname}}">{{userInfo.fname}}</div>
+            <div class="topic col-lg-6 trim" contenteditable="true" title="{{userInfo.lname}}">{{userInfo.lname}}</div>
+        </div>                
+    </div>
+    <div class="row-2 fl">
+        <div class="large-12 contact-div">
+            <div class="large-12 name fl">Email</div>
+            <div contenteditable="true" class="topic large-12 fl trim" title="{{userInfo.email}}">{{userInfo.email}}</div>
+        </div>
+        <div class="large-12 contact-div">
+            <div class="large-12 name fl">Password</div>
+            <input type="password" class="topic large-12 fl">
+        </div>
+        <div class="large-12 contact-div">
+            <div class="large-12 fl name">Contact</div>
+            <div contenteditable="true" class="topic large-12 fl" title="{{userInfo.contact}}">{{userInfo.contact}}</div>
+        </div>
+        <div class="large-12 contact-div">
+            <div class="large-12 name fl">Address</div>
+            <div contenteditable="true" class="topic large-12 fl trim" title="{{userInfo.address}}">{{userInfo.address}}</div>
+        </div>
+    </div>
+    <textarea class="large-12 row-2 contact-div fl" placeholder="Some more info about you"></textarea>
+</div>
+
