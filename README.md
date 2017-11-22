@@ -1,4 +1,5 @@
 # My Article
+### This project is under progress. It is all about articles/blogs/notes handling for any user for free.
 
 # Steps to Setup the Project:
 
