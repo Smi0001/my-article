@@ -1,4 +1,4 @@
-# my-article
+# My Article
 
 # Steps to Setup the Project:
 
@@ -12,7 +12,7 @@
 ```
 4. Enter **npm install** (press enter, this will install all dependencies of the project, and it would be ready to run).
 
-# Step to Run the Project:
+# Steps to Run the Project:
 
 1.    Open Node.JS command prompt and execute **npm start**
 2.    Enter command **ng serve --open**
@@ -28,4 +28,39 @@
 ```
 *Please feel free to comment in case of any ambiguity.*
 
-``` update pending...```
+# Technologies used
+```NodeJS```
+```Angular CLI 1.5.7```
+```Angular 5```
+```angular-in-memory-web-api``` *Currently DB is created for simulation, later MONGO DB will replace this*
+```HTML5```
+```CSS3```
+```bootstrap 4```
+```karma-jasmine```
+```Typescipt 2.x```
+```WebPack```
+
+# Project Features
+1. ```User authentication```
+2. ```Dashboard with user profile```
+
+# Pending tasks
+1. Article Management
+2. User Profile Management
+3. User Registration [OAUTH 2.0 for Social plugins]
+4. Forgot Password Mailing System
+5. Include *Keep me Signed In* feature using ngCookies
+6. Use Mongo DB to handle real data
+7. History Management
+8. User Feedback
+9. Download Article
+10. Publish Personalized Article
+
+# References
+1. https://angular.io/guide
+2. https://www.w3schools.com/bootstrap4/
+3. http://jasonwatmore.com/post/2017/02/22/mean-with-angular-2-user-registration-and-login-example-tutorial
+4. https://stackoverflow.com
+5. https://codecraft.tv/courses/angular/
+6. https://coursetro.com/courses/19/Learn-Angular-5-from-Scratch---Angular-5-Tutorial
+
