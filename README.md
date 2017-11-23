@@ -15,8 +15,7 @@
 
 # Steps to Run the Project:
 
-1.    Open Node.JS command prompt and execute **npm start**
-2.    Enter command **ng serve --open**
+1.    Open Node.JS command prompt and execute **npm start** or **ng serve --open**
 2.    After this message - *webpack: Compiled successfully.*, open the browser, the project is available at **http://localhost:4200**
 3.    Enter any of the following login credential pair to login successfully:
 ```
