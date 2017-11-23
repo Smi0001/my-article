@@ -7,9 +7,9 @@
 2. This project need Node.js (if it is not yet installed, please install it from https://nodejs.org/en/download )
 3. Open Node.JS command prompt, move to destination directory (to execute npm commands)
 ```
-    For example the project folder task-discussion is located at "D:\GIT\my-article"
-    Enter "D:" (press enter)
-    Then enter "cd D:\GIT\task-discussion" (press enter) 
+    For example the project folder task-discussion is located at "E:\my-article"
+    Enter "E:" (press enter)
+    Then enter "cd my-article" (press enter) 
 ```
 4. Enter **npm install** (press enter, this will install all dependencies of the project, and it would be ready to run).
 
