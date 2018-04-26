@@ -7,8 +7,20 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
   <app-root></app-root>
+  <script>
+  (function() {
+    document.body.addEventListener("click", function(e) {
+      var sideMenu = document.getElementById('sideMenu');
+      const _target = e.target;
+      if (_target !== sideMenu) {
+        document.getElementById("mySidenav").style.width = "0"; // close sideMenu
+      }
+    });
+  })();
+  </script>
 </body>
 </html>

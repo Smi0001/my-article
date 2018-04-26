@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+/* overriding default element styles */
+input {
+  padding: 2px 5px;
+  border: none;
+  min-height: 28px;
+}
 
 .modal {
   display: none;
@@ -62,3 +68,94 @@
 .fr {
   float: right;
 }
+.input-def-h {
+  height: 28px;
+}
+.text-display {
+  min-width: 200px;
+  margin: 5px;
+  padding: 2px 5px;
+  max-height: 50px;
+  max-width: 250px;
+  overflow: hidden;
+}
+.text-display:hover, .text-display:active,
+input:hover, input:active {
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 1px 4px;
+}
+
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+}
+[contenteditable=true]:hover{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+
+}
+
+.title-heading {
+  background: #ccc;
+  padding: 3px 8px;
+}
+.container {
+  border: 1px solid grey;
+  margin: 0;
+  padding: 0;
+}
+.container:first-child {
+  border-top-left-radius: 5px;
+}
+.container:last-child {
+  /* overflow: auto; */
+  border-top-right-radius: 5px;
+}
+.inner-container {
+  height: 350px;
+  overflow-y: auto;
+}
+
+/* sidebar css */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2D4157;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* End of Sidebar css */

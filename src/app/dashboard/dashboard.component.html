@@ -4,36 +4,56 @@
 
 <div *ngIf="userInfo" class="dash-div">
     <div class="row">
-        <div class="col col-lg-3">
+        <div class="col col-lg-3 col-md-3">
             <div class="avatar">
                 <img [src]="userInfo.avatar" alt="User Image" class="user-img">
             </div>
+            <input class="text-display col-md-6 trim input-def-h" contenteditable="true"
+             title="{{userInfo.fname}} {{userInfo.lname}}" value="{{userInfo.fname}} {{userInfo.lname}}" />
         </div>
-        <div class="name-div col-lg-9 row">
-            <div class="col-lg-6 name">First Name</div>
-            <div class="col-lg-6 name">Last Name</div>
-            <div class="topic col-lg-6 trim" contenteditable="true" title="{{userInfo.fname}}">{{userInfo.fname}}</div>
-            <div class="topic col-lg-6 trim" contenteditable="true" title="{{userInfo.lname}}">{{userInfo.lname}}</div>
-        </div>                
+        <div class="name-div col-lg-9 col-md-9 row">
+          <div class="col-md-6">
+            <input class="text-display large-12 fl trim input-def-h" title="{{userInfo.email}}" placeholder="Enter your Email" value="{{userInfo.email}}"/>
+            <input type="password" class="text-display large-12 fl input-def-h" placeholder="* * * * * * * *" />
+          </div>
+          <div class="col-md-6">
+            <input class="text-display large-12 fl input-def-h" title="{{userInfo.contact}}" placeholder="Enter contact #" value="{{userInfo.contact}}" />
+            <div contenteditable="true" class="text-display large-12 fl trim" title="{{userInfo.address}}" placeholder="About yourself">{{userInfo.address}}</div>
+          </div>
+        </div>
+     </div>
+  <div class="row">
+    <div class="col-md-8 container">
+      <div class="col-md-12 title-heading">
+        Recent Activities
+      </div>
+      <div *ngIf="activityList" class="col-md-12 inner-container activity-div">
+        <table  class="table table-hover table-bordered">
+          <thead align="center" class="thead-default">
+            <tr>
+              <th class="text-cap" scope="col">Articles</th>
+              <th class="text-cap" scope="col">Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let activity of activityList" class="">
+              <td scope="row">
+                {{activity.title}}
+              </td>
+              <td scope="row">
+                {{activity.updatedTime | date: 'medium'}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="row-2 fl">
-        <div class="large-12 contact-div">
-            <div class="large-12 name fl">Email</div>
-            <div contenteditable="true" class="topic large-12 fl trim" title="{{userInfo.email}}">{{userInfo.email}}</div>
-        </div>
-        <div class="large-12 contact-div">
-            <div class="large-12 name fl">Password</div>
-            <input type="password" class="topic large-12 fl">
-        </div>
-        <div class="large-12 contact-div">
-            <div class="large-12 fl name">Contact</div>
-            <div contenteditable="true" class="topic large-12 fl" title="{{userInfo.contact}}">{{userInfo.contact}}</div>
-        </div>
-        <div class="large-12 contact-div">
-            <div class="large-12 name fl">Address</div>
-            <div contenteditable="true" class="topic large-12 fl trim" title="{{userInfo.address}}">{{userInfo.address}}</div>
-        </div>
+    <div class="col-md-4 container">
+      <div class="col-md-12 title-heading">
+        New Fetures
+      </div>
+      <div class="col-md-12 inner-container">
+      </div>
     </div>
-    <textarea class="large-12 row-2 contact-div fl" placeholder="Some more info about you"></textarea>
+  </div>
 </div>
-
